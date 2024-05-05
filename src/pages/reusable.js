@@ -1,3 +1,13 @@
+import React from 'react'
+
+const Reuse = () => {
+  return (
+    <div>Reuse</div>
+  )
+}
+
+export default Reuse
+
 // import styled from "@emotion/styled";
 // import React, { useState } from 'react';
 // import { Collapse, Button, Card, CardBody } from 'reactstrap'; // Import Bootstrap components

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Landingimage from '../images/LandingSection.png'
+import Landingimage from '../images/main.webp'
 
 
 
@@ -57,7 +57,7 @@ const SloganPortfolio = () => {
   background: linear-gradient(
       to bottom,
       rgba(30, 63, 104, 0.2) 0%,
-      rgba(30, 63, 104, 0.6) 100%
+      rgba(30, 63, 104, 0.2) 100%
     ),
     url(${Landingimage});
   background-position: center;

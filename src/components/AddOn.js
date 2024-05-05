@@ -16,6 +16,7 @@ const PackageTitle = styled.div`
 const Items = styled.div`
   color: white;
   font-size: 18px;
+  text-transform: capitalize;
 `;
 const Logo = styled.i`
   margin-right: 10px;
@@ -61,7 +62,7 @@ const AddOn = () => {
 
       <div className="container">
         <div className="row">
-          <AddonList texts={["Exterior plastic restoration"]} price={["$30.00 - $50.00"]}/>
+          <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>
           <AddonList texts={["Each additional floor mat"]} price={["$5.00"]}/>
           <AddonList texts={["Headliner spot treatment"]} price={["$25.00 - $50.00"]}/>
           <AddonList texts={["Pet Hair"]} price={["$40.00 - $80.00"]}/>
