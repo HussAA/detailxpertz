@@ -34,6 +34,8 @@ const MyLink = styled.a`
 `;
 const Footer = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggle = () => setIsOpen(!isOpen)
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -42,19 +44,19 @@ const Footer = () => {
       <FooterContainer>
         <div>
           <a href="https://www.facebook.com/mydetailxpertz/" target="_blank" rel="noreferrer">
-            <Icon className="bi bi-facebook" />
+            <Icon className="bi bi-facebook" aria-label="Facebook"/>
           </a>
           <a href="https://www.instagram.com/mydetailxpertz/" target="_blank" rel="noreferrer">
-            <Icon className="bi bi-instagram" />
+            <Icon className="bi bi-instagram" aria-label="Instagram"/>
           </a>
           <a href="https://www.google.com/intl/en_ca/business/" target="_blank" rel="noreferrer">
-            <Icon className="bi bi-google" />
+            <Icon className="bi bi-google" aria-label="Google"/>
           </a>
           <a target="_blank" rel="noreferrer" href="mailto:Detailxpertz@yahoo.com">
-            <Icon className="bi bi-envelope-plus" />
+            <Icon className="bi bi-envelope-plus" aria-label="Email"/>
           </a>
           <a target="_blank" rel="noreferrer" href="tel:+1587-578-1512">
-            <Icon className="bi bi-telephone" />
+            <Icon className="bi bi-telephone" aria-label="Phone"/>
           </a>
         </div>
         <div className="p-3 ">

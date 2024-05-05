@@ -9,13 +9,13 @@ const LeftHalf = styled.div`
   justify-content: space-between;
 `;
 
-const RightHalf = styled.div`
-  min-height: 410px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-width: 80vh;
-`;
+// const RightHalf = styled.div`
+//   min-height: 410px;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   max-width: 80vh;
+// `;
 
 const Title = styled.div`
   min-height: 260px;

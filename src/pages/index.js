@@ -2,7 +2,6 @@ import AppNavBar from "../components/Navbar";
 import * as React from "react";
 import styled from "@emotion/styled";
 import AboutUs from "../components/About";
-import Services from "../components/Services";
 import LandingSection from "../components/LandingSection";
 import Gallery from "../components/Gallery";
 import ScrollArrow from "../components/ScrollButton";

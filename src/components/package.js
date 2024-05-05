@@ -245,6 +245,7 @@ const Pricing = () => {
                   NEW CAR SMELL!!!
                   <br />
                   <br />
+                  <br />
                 </PricingFeatures>
               </div>
               <div className="text-center mt-2">

@@ -53,6 +53,8 @@ const drawerWidth = 240;
 const AppNavBar = (props) => {
   const { tawkMessenger } = React.useContext(TawkContext)
   const { window } = props;
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggle = () => setIsOpen(!isOpen)
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {

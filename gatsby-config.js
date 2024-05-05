@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `sparklesAutoSpa`,
+    title: `detailxpertz`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ['gatsby-plugin-react-helmet', 

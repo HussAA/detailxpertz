@@ -13,7 +13,7 @@
 }
     
     
-.Fabric-Protect-pic{
+/* .Fabric-Protect-pic{
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.22);
     height: auto;
     min-height: 330px;
@@ -47,7 +47,7 @@
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-}
+} */
 
 
 @media screen and (max-width:500px){

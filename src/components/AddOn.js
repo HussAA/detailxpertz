@@ -63,7 +63,7 @@ const AddOn = () => {
         <div className="row">
           <AddonList texts={["Exterior plastic restoration"]} price={["$30.00 - $50.00"]}/>
           <AddonList texts={["Each additional floor mat"]} price={["$5.00"]}/>
-          <AddonList texts={["Healiner spot treatment"]} price={["$25.00 - $50.00"]}/>
+          <AddonList texts={["Headliner spot treatment"]} price={["$25.00 - $50.00"]}/>
           <AddonList texts={["Pet Hair"]} price={["$40.00 - $80.00"]}/>
           <AddonList texts={["Smoke damage"]} price={["$100.00 - $250.00"]}/>
           <AddonList texts={["Mold damage"]} price={["$50.00 - $100.00"]}/>
