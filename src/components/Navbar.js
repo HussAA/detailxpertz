@@ -73,11 +73,11 @@ const AppNavBar = (props) => {
             <ListItemText primary="About" />
           </ListItemButtonStyle>
         </ListItem>
-        <ListItem>
+        {/* <ListItem>
           <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
             <ListItemText primary="Services" />
           </ListItemButtonStyle>
-        </ListItem>
+        </ListItem> */}
         <ListItem>
           <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
             <ListItemText primary="Packages" />
@@ -124,7 +124,7 @@ const AppNavBar = (props) => {
             style={{ marginLeft: "auto" }}
           >
             <LinksStyle href="#About">About</LinksStyle>
-            <LinksStyle href="#Services">Services</LinksStyle>
+            {/* <LinksStyle href="#Services">Services</LinksStyle> */}
             <LinksStyle href="#Packages">Packages</LinksStyle>
             <LinksStyle href="tel:+1587-578-1512">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
