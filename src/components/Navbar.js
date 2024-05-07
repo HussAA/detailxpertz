@@ -14,7 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
-
+import { StaticImage } from "gatsby-plugin-image";
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -25,11 +25,11 @@ const ListItemButtonStyle = styled(ListItemButton)`
 
 const AppBarStyle = styled(AppBar)`
   height: 100px;
-  background: white;
+  background: black;
   position: fixed;
 `;
 const LinksStyle = styled.a`
-  color: black;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 16px;
@@ -51,10 +51,10 @@ const BookButtonStyle = styled(Button)`
 const drawerWidth = 240;
 
 const AppNavBar = (props) => {
-  const { tawkMessenger } = React.useContext(TawkContext)
+  const { tawkMessenger } = React.useContext(TawkContext);
   const { window } = props;
-  const [isOpen, setIsOpen] = React.useState(false)
-  const toggle = () => setIsOpen(!isOpen)
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggle = () => setIsOpen(!isOpen);
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -63,8 +63,8 @@ const AppNavBar = (props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-      Detail<i class="bi bi-twitter-x"></i>PERTZ
+      <Typography variant="h6" sx={{ my: 2, textAlign: "center" }}>
+        Detail<i class="bi bi-twitter-x"></i>PERTZ
       </Typography>
       <Divider />
       <List>
@@ -84,8 +84,11 @@ const AppNavBar = (props) => {
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
-          <ListItemButtonStyle href="tel:+1613-790-4775" sx={{ textAlign: "center" }}>
-            <ListItemText primary="Call Us"/>
+          <ListItemButtonStyle
+            href="tel:+1613-790-4775"
+            sx={{ textAlign: "center" }}
+          >
+            <ListItemText primary="Call Us" />
           </ListItemButtonStyle>
         </ListItem>
         <ListItem>
@@ -105,7 +108,7 @@ const AppNavBar = (props) => {
       <AppBarStyle>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
           <IconButton
-            color="dark"
+            color="primary"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -115,16 +118,21 @@ const AppNavBar = (props) => {
           </IconButton>
           <Typography variant="h6" component="div">
             <div href="/" style={{ color: "black", textDecoration: "none" }}>
-            Detail<i class="bi bi-twitter-x"></i>PERTZ
+              {/* Detail<i class="bi bi-twitter-x"></i>PERTZ */}
             </div>
           </Typography>
-
+          <StaticImage
+            src="../images/nav_logo.jpg"
+            width={120}
+            height={100}
+            alt="car logo"
+          />
           <Box
             sx={{ mr: 2, display: { xs: "none", md: "block" } }}
             style={{ marginLeft: "auto" }}
           >
             <LinksStyle href="#About">About</LinksStyle>
-            {/* <LinksStyle href="#Services">Services</LinksStyle> */}
+            <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
             <LinksStyle href="tel:+1587-578-1512">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>

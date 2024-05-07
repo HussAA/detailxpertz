@@ -192,7 +192,7 @@ const Pricing = () => {
       <PackageTitle id="Packages" className="text-center text-uppercase">
         packages
       </PackageTitle>
-      <SectionHeading>OUR PACKAGES</SectionHeading>
+      <SectionHeading>INTERIOR PACKAGES</SectionHeading>
       <SectionDescription>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
