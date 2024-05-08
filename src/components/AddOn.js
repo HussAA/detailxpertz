@@ -58,10 +58,12 @@ const AddonList = ({ texts, price }) => {
 const AddOn = () => {
   return (
     <>
-      <PackageTitle className="text-center">Extras</PackageTitle>
+      <PackageTitle className="text-center">Extras (Excluded from discount)</PackageTitle>
 
       <div className="container">
         <div className="row">
+          <AddonList texts={["Exterior hand Wash"]} price={["$60.00"]}/>
+          <AddonList texts={["Polishing/Wax"]} price={["$200.00 - $250.00"]}/>
           <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>
           <AddonList texts={["Each additional floor mat"]} price={["$5.00"]}/>
           <AddonList texts={["Headliner spot treatment"]} price={["$25.00 - $50.00"]}/>

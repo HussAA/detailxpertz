@@ -102,11 +102,13 @@ const AppNavBar = (props) => {
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
-
+    
   return (
     <Box sx={{ display: "flex" }}>
+      
       <AppBarStyle>
         <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
+        
           <IconButton
             color="primary"
             aria-label="open drawer"

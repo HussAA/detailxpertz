@@ -268,7 +268,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingTitlesCenter className="col">
-                  Absolute
+                Affordable
                 </PricingTitlesCenter>
               </div>
               <div className="row">
@@ -330,7 +330,7 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Supreme</PricingTitles>
+                <PricingTitles className="col">Premium</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
@@ -339,21 +339,19 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCoverage className="col">
-                  Ideal for a shiny exterior with added protection for your
-                  vehicle.
+                  Ideal for protection for your vehicle.
                 </PricingCoverage>
               </div>
               <hr />
               <div className="row">
                 <ListStyle2 className="col">
                   <ArrowStyle2 className="bi bi-arrow-90deg-down" />
-                  Absolute package, plus
+                  Affordable package, plus
                 </ListStyle2>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  1 Set floor mats
+                  <Check src={Checkmark} />1 Set floor mats
                 </PricingFeatures>
               </div>
               <div className="row">

@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-
-
 const LeftHalf = styled.div`
   min-height: 410px;
   box-sizing: border-box;
@@ -57,7 +55,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #6E6E6E;
+  color: #6e6e6e;
   margin-bottom: 70px;
   margin-left: 23px;
   margin-right: 23px;
@@ -71,9 +69,8 @@ const AboutUs = () => {
       </SectionTitles>
       <SectionHeading>WHO WE ARE</SectionHeading>
       <SectionDescription>
-        
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Whether it's a daily driver or a luxury vehicle, we are
+        committed to elevating your car's appearance and preserving its value.
       </SectionDescription>
       <div className="container-lg px-5">
         <div className="row">
@@ -86,9 +83,9 @@ const AboutUs = () => {
 
             <LeftText className="row">
               <div className="col">
-                Lorem ipsum is placeholder text commonly used in the graphic,
-                print, and publishing industries for previewing layouts and
-                visual mockups.
+                We are dedicated to enhancing the beauty and longevity of your
+                car through our comprehensive detailing services, using only the
+                finest products and techniques.
               </div>
             </LeftText>
           </LeftHalf>

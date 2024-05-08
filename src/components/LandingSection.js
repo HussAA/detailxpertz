@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Landingimage from '../images/main.webp'
-
+import { Alert } from "@mui/material";
 
 
 const Slogan = styled.div`
@@ -37,11 +37,20 @@ const Overlay = styled.div`
     }
 `
 const SloganPortfolio = () => {
+  const [showDiscountAlert, setShowDiscountAlert] = React.useState(true);
     return (
       <>
         <div className="container text-center">
+        {showDiscountAlert && ( // Display the discount alert if showDiscountAlert is true
+            <Alert
+              severity="info"
+              onClose={() => setShowDiscountAlert(false)} // Close the alert when dismissed
+            >
+              First-time customers get 20% off!
+            </Alert>
+          )}
           <Overlay className="shadow">
-            <Slogan>Edmonton, AB, Canada (20KM radius) </Slogan>
+            <Slogan>Edmonton, AB, Canada (50KM radius) <div style={{fontSize:"17px"}}>***Travel is extra***</div></Slogan>
           </Overlay>
         </div>
       </>
