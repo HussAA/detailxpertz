@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Landingimage from '../images/main.webp'
+import Landingimage from "../images/main.webp";
 import { Alert } from "@mui/material";
-
 
 const Slogan = styled.div`
   font-size: 25pt;
@@ -17,48 +16,41 @@ const Slogan = styled.div`
   }
 `;
 const Overlay = styled.div`
-    position: absolute;
-    top: 96%;
-    left: 25%;
-    width: 50%;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: white;
-    text-align: center;
-    padding: 10px;
+  position: absolute;
+  top: 96%;
+  left: 25%;
+  width: 50%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px;
 
-    @media (max-width:730.1px) {
-        left: 20%;
-        width: 60%;
-        top: 95%;
-}
-    @media (min-width:1300px){
-        top: 97%;
-    }
-`
+  @media (max-width: 730.1px) {
+    left: 20%;
+    width: 60%;
+    top: 95%;
+  }
+  @media (min-width: 1300px) {
+    top: 97%;
+  }
+`;
 const SloganPortfolio = () => {
-  const [showDiscountAlert, setShowDiscountAlert] = React.useState(true);
-    return (
-      <>
-        <div className="container text-center">
-        {showDiscountAlert && ( // Display the discount alert if showDiscountAlert is true
-            <Alert
-              severity="info"
-              onClose={() => setShowDiscountAlert(false)} // Close the alert when dismissed
-            >
-              First-time customers get 20% off!
-            </Alert>
-          )}
-          <Overlay className="shadow">
-            <Slogan>Edmonton, AB, Canada (50KM radius) <div style={{fontSize:"17px"}}>***Travel is extra***</div></Slogan>
-          </Overlay>
-        </div>
-      </>
-    );
-  };
+  return (
+    <>
+      <div className="container text-center">
+        <Overlay className="shadow">
+          <Slogan>
+            Edmonton, AB, Canada (50KM radius){" "}
+            <div style={{ fontSize: "17px" }}>***Travel is extra***</div>
+          </Slogan>
+        </Overlay>
+      </div>
+    </>
+  );
+};
 
-
-  const Masthead = styled.div`
+const Masthead = styled.div`
   position: relative;
   height: 60vh;
   margin-top: auto;
@@ -86,12 +78,22 @@ const SloganPortfolio = () => {
   }
 `;
 const LandingSection = () => {
+  const [showDiscountAlert, setShowDiscountAlert] = React.useState(true);
   return (
     <>
+      <div className="">
+        {showDiscountAlert && ( // Display the discount alert if showDiscountAlert is true
+          <Alert
+            severity="info"
+            onClose={() => setShowDiscountAlert(false)} // Close the alert when dismissed
+          >
+            First-time customers get 20% off!
+          </Alert>
+        )}
+      </div>
+
       <Masthead>
-        <div className="container">
-            <SloganPortfolio />
-        </div>
+        <SloganPortfolio />
       </Masthead>
     </>
   );
