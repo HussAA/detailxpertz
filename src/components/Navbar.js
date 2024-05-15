@@ -53,8 +53,6 @@ const drawerWidth = 240;
 const AppNavBar = (props) => {
   const { tawkMessenger } = React.useContext(TawkContext);
   const { window } = props;
-  const [isOpen, setIsOpen] = React.useState(false);
-  const toggle = () => setIsOpen(!isOpen);
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -73,11 +71,11 @@ const AppNavBar = (props) => {
             <ListItemText primary="About" />
           </ListItemButtonStyle>
         </ListItem>
-        {/* <ListItem>
+        <ListItem>
           <ListItemButtonStyle href="#Services" sx={{ textAlign: "center" }}>
             <ListItemText primary="Services" />
           </ListItemButtonStyle>
-        </ListItem> */}
+        </ListItem>
         <ListItem>
           <ListItemButtonStyle href="#Packages" sx={{ textAlign: "center" }}>
             <ListItemText primary="Packages" />
@@ -85,7 +83,7 @@ const AppNavBar = (props) => {
         </ListItem>
         <ListItem>
           <ListItemButtonStyle
-            href="tel:+1613-790-4775"
+            href="tel:+15875781512"
             sx={{ textAlign: "center" }}
           >
             <ListItemText primary="Call Us" />
@@ -136,7 +134,7 @@ const AppNavBar = (props) => {
             <LinksStyle href="#About">About</LinksStyle>
             <LinksStyle href="#Services">Services</LinksStyle>
             <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle href="tel:+1587-578-1512">Call us</LinksStyle>
+            <LinksStyle href="tel:+15875781512">Call us</LinksStyle>
             <LinksStyle href="#Gallery">Gallery</LinksStyle>
             <BookButtonStyle
               onClick={() => {

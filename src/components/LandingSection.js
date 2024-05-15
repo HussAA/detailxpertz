@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Landingimage from "../images/main.webp";
-import { Alert } from "@mui/material";
-
+import Marquee from "react-fast-marquee";
 const Slogan = styled.div`
   font-size: 25pt;
   font-family: system-ui;
@@ -77,21 +76,17 @@ const Masthead = styled.div`
     height: 35vh;
   }
 `;
-
+const Line = styled.span`
+  margin-inline-end: 70px;
+`
 const LandingSection = () => {
-  const [showDiscountAlert, setShowDiscountAlert] = React.useState(true);
   return (
     <>
-      <div>
-        {showDiscountAlert && ( // Display the discount alert if showDiscountAlert is true
-          <Alert
-            severity="info"
-            onClose={() => setShowDiscountAlert(false)} // Close the alert when dismissed
-          >
-            First-time customers get 20% off! + Multiple vehicles discount
-          </Alert>
-        )}
-      </div>
+      <Marquee className="overflow-hidden">
+          <div className="p-1">
+            First-time customers get 20% off! <Line/> Multiple vehicles discount <Line/> +1 (587) 578-1512 <Line/>
+          </div>
+      </Marquee>
 
       <Masthead>
         <SloganPortfolio />

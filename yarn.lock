@@ -4643,6 +4643,7 @@ __metadata:
     react: "npm:^18.3.1"
     react-compare-image: "npm:^3.4.0"
     react-dom: "npm:^18.3.1"
+    react-fast-marquee: "npm:^1.6.4"
     react-helmet: "npm:^6.1.0"
     react-icons: "npm:^4.12.0"
     react-image-gallery: "npm:^1.2.11"
@@ -12515,6 +12516,16 @@ __metadata:
   version: 3.2.2
   resolution: "react-fast-compare@npm:3.2.2"
   checksum: 10c0/0bbd2f3eb41ab2ff7380daaa55105db698d965c396df73e6874831dbafec8c4b5b08ba36ff09df01526caa3c61595247e3269558c284e37646241cba2b90a367
+  languageName: node
+  linkType: hard
+
+"react-fast-marquee@npm:^1.6.4":
+  version: 1.6.4
+  resolution: "react-fast-marquee@npm:1.6.4"
+  peerDependencies:
+    react: ">= 16.8.0 || 18.0.0"
+    react-dom: ">= 16.8.0 || 18.0.0"
+  checksum: 10c0/bee73a9467d0d6556bbb33538b7e008a4b0a7355e457b6d57511eacc5d103a21e49fb7928ed7fd964e4b53469a7d1ca6d6944b5d527abe7048cde3a1483215b3
   languageName: node
   linkType: hard
 

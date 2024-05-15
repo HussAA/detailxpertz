@@ -25,7 +25,7 @@ const SectionDescription = styled.div`
   font-size: 12pt;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #6E6E6E;
+  color: #6e6e6e;
   margin-bottom: 50px;
   margin-left: 23px;
   margin-right: 23px;
@@ -41,8 +41,6 @@ class Gallery extends Component {
     const before5 = require("../images/before11.webp").default;
     const after5 = require("../images/after11.webp").default;
 
-
-
     return (
       <>
         <SectionTitles className="text-center text-uppercase">
@@ -50,23 +48,41 @@ class Gallery extends Component {
         </SectionTitles>
         <SectionHeading>Before & After Showcase</SectionHeading>
         <SectionDescription>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Explore our Before and After Gallery to witness stunning
+          transformations showcasing the remarkable difference our detailing
+          services can make.
         </SectionDescription>
 
         <div className="container mb-5 padding-gallery">
           <div className="row">
             <div className="col-lg-6 mb-5 mb-lg-3">
-              <ReactCompareImage alt="before/after pics" leftImage={before1} rightImage={after1} aspectRatio="taller"/>
+              <ReactCompareImage
+                alt="before/after pics"
+                leftImage={before1}
+                rightImage={after1}
+                aspectRatio="taller"
+              />
             </div>
             <div className="col-lg-6 mb-5 mb-lg-3">
-              <ReactCompareImage alt="before/after pics" leftImage={before2} rightImage={after2} />
+              <ReactCompareImage
+                alt="before/after pics"
+                leftImage={before2}
+                rightImage={after2}
+              />
             </div>
             <div className="col-lg-6 mb-5 mb-lg-0">
-              <ReactCompareImage alt="before/after pics" leftImage={before4} rightImage={after4} />
+              <ReactCompareImage
+                alt="before/after pics"
+                leftImage={before4}
+                rightImage={after4}
+              />
             </div>
             <div className="col-lg-6 mb-5 mb-lg-0">
-              <ReactCompareImage alt="before/after pics" leftImage={before5} rightImage={after5} />
+              <ReactCompareImage
+                alt="before/after pics"
+                leftImage={before5}
+                rightImage={after5}
+              />
             </div>
           </div>
         </div>

@@ -26,6 +26,36 @@ const Logo = styled.i`
 const Price = styled.span`
   color: white;
 `;
+
+const AddonListP = ({ texts, price }) => {
+  return (
+    <>
+      {_.isArray(texts) && (
+        <>
+          {texts.map((v, i) => {
+            return (
+              <React.Fragment key={i}>
+                <div className="col-6">
+                  <Items className="col-12">
+                    <Logo className="bi bi-bag-plus" />
+                    {v}
+                  </Items>
+                </div>
+                <div className="col-6">
+                  <div>
+                    
+                    <Logo className="bi bi-arrow-right"/>
+                    <Price className="ms-3">{price}</Price>
+                  </div>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </>
+      )}
+    </>
+  );
+};
 const AddonList = ({ texts, price }) => {
   return (
     <>
@@ -62,6 +92,7 @@ const AddOn = () => {
 
       <div className="container">
         <div className="row">
+          <AddonListP texts={["Stain Removal Bottle"]} price={["$15.00"]}/>
           <AddonList texts={["Exterior hand Wash"]} price={["$60.00"]}/>
           <AddonList texts={["Polishing/Wax"]} price={["$200.00 - $250.00"]}/>
           <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>

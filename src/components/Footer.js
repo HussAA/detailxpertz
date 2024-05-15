@@ -34,8 +34,6 @@ const MyLink = styled.a`
 `;
 const Footer = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
-  const [isOpen, setIsOpen] = React.useState(false)
-  const toggle = () => setIsOpen(!isOpen)
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -55,7 +53,7 @@ const Footer = () => {
           <a target="_blank" rel="noreferrer" href="mailto:Detailxpertz@yahoo.com">
             <Icon className="bi bi-envelope-plus" aria-label="Email"/>
           </a>
-          <a target="_blank" rel="noreferrer" href="tel:+1587-578-1512">
+          <a target="_blank" rel="noreferrer" href="tel:+15875781512">
             <Icon className="bi bi-telephone" aria-label="Phone"/>
           </a>
         </div>
@@ -65,7 +63,7 @@ const Footer = () => {
             onClick={() => {
               tawkMessenger.toggle();
             }}
-            href="#"
+            
           >
             Book Now
           </Footerlink>

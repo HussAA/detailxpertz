@@ -194,8 +194,9 @@ const Pricing = () => {
       </PackageTitle>
       <SectionHeading>INTERIOR PACKAGES</SectionHeading>
       <SectionDescription>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Our interior package provides comprehensive car detailing, ensuring a
+        pristine and refreshed cabin with deep cleaning, upholstery treatment,
+        and meticulous attention to every detail.
       </SectionDescription>
       <div className="container-xl pricing-md-max">
         <div className="row">
@@ -268,7 +269,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingTitlesCenter className="col">
-                Affordable
+                  Affordable
                 </PricingTitlesCenter>
               </div>
               <div className="row">

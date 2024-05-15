@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import React, { useState } from 'react';
+import React from "react";
 
 const Title = styled.div`
   font-weight: 600;
@@ -25,71 +25,74 @@ const Services = () => {
         <div className="section-title">
           <div className="section-h2">Services</div>
           <div className="section-p">
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
+            Transform your vehicle with our meticulous car detailing services,
+            offering interior & exterior detailing, polish, wax, headlight
+            restoration, and removing scratches.
           </div>
         </div>
         <div className="row">
           <div className="col-md-6 col-lg-4 p-3">
             <div className="icon">
-              <i className="bi bi-briefcase"></i>
+              <i className="bi bi-droplet"></i>
             </div>
-            <Title className="mb-3 pb-2">Lorem Ipsum</Title>
+            <Title className="mb-3 pb-2">Interior & Exterior Detail</Title>
             <div className="">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              Deep cleaning and restoring the inside of a vehicle and thorough
+              cleaning and polishing the outer surfaces of a vehicle to enhance
+              its appearance and protection.
             </div>
           </div>
           <div className="col-md-6 col-lg-4 p-3">
             <div className="icon">
-              <i className="bi bi-briefcase"></i>
+              <i className="bi bi-bag"></i>
             </div>
-            <Title className="mb-3 pb-2">Lorem Ipsum</Title>
+            <Title className="mb-3 pb-2">Polishing/Wax</Title>
             <div className="">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              Polishing and waxing enhance the shine and protection of surfaces
+              by smoothing imperfections and providing a durable layer of
+              protective coating.
             </div>
           </div>
           <div className="col-md-6 col-lg-4 p-3">
             <div className="icon">
-              <i className="bi bi-briefcase"></i>
+              <i className="bi bi-car-front-fill"></i>
             </div>
-            <Title className="mb-3 pb-2">Lorem Ipsum</Title>
+            <Title className="mb-3 pb-2">Mobile Service</Title>
             <div className="">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              We exclusively offer Mobile Service for with only the purchase of
+              an interior package.
             </div>
           </div>
           <div className="col-md-6 col-lg-4 p-3">
             <div className="icon">
-              <i className="bi bi-briefcase"></i>
+              <i className="bi bi-geo"></i>
             </div>
-            <Title className="mb-3 pb-2">Lorem Ipsum</Title>
+            <Title className="mb-3 pb-2">Vehicle Drop-off/Pickup</Title>
             <div className="">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              Vehicle Drop-off/Pickup is a convenient service where customers
+              drop off and pick up their vehicles.
             </div>
           </div>
           <div className="col-md-6 col-lg-4 p-3">
             <div className="icon">
-              <i className="bi bi-briefcase"></i>
+              <i className="bi bi-eraser"></i>
             </div>
-            <Title className="mb-3 pb-2">Lorem Ipsum</Title>
+            <Title className="mb-3 pb-2">Scratch Removal</Title>
             <div className="">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              Scratch Removal offers professional and effective solutions to
+              restore surfaces by eliminating scratches and blemishes, renewing
+              them to their original pristine condition.
             </div>
           </div>
           <div className="col-md-6 col-lg-4 p-3">
             <div className="icon">
-              <i className="bi bi-briefcase"></i>
+              <i className="bi bi-lightbulb"></i>
             </div>
-            <Title className="mb-3 pb-2">Lorem Ipsum</Title>
+            <Title className="mb-3 pb-2">Headlight Restoration</Title>
             <div className="">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
+              Headlight restoration involves the process of renewing and
+              enhancing the clarity and effectiveness of cloudy or faded vehicle
+              headlights.
             </div>
           </div>
         </div>
