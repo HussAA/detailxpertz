@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import AddOn from "../components/AddOn";
 import { Helmet } from "react-helmet";
 import Services from "../components/Services";
+import AllGallery from "../components/allGallery";
 const PricingSection = styled.section`
   background: #1e3f68;
   padding-top: 20px;
@@ -41,12 +42,7 @@ const IndexPage = () => {
         <section id="About" style={{ marginTop: "80px", paddingTop: "80px" }}>
           <AboutUs />
         </section>
-        {/* <div
-          id="Packages"
-          style={{ marginTop: "100px", paddingTop: "120px" }}
-        >
-          <Packages />
-        </div> */}
+        
         <PricingSection style={{ marginTop: "100px", paddingTop: "120px" }}>
           <Pricing />
           <div>
@@ -70,6 +66,9 @@ const IndexPage = () => {
           }}
         >
           <Gallery />
+        </section>
+        <section>
+          <AllGallery/>
         </section>
         <section>
           <Footer/>

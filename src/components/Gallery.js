@@ -34,16 +34,12 @@ class Gallery extends Component {
   render() {
     const before1 = require("../images/before1.webp").default;
     const after1 = require("../images/after1.webp").default;
-    const before2 = require("../images/before10.webp").default;
-    const after2 = require("../images/after10.webp").default;
-    const before3 = require("../images/before3.webp").default;
-    const after3 = require("../images/after3.webp").default;
-    const before4 = require("../images/before4.webp").default;
-    const after4 = require("../images/after4.webp").default;
+    const before2 = require("../images/Image11.webp").default;
+    const after2 = require("../images/Image5.webp").default;
+    const before4 = require("../images/Image7.webp").default;
+    const after4 = require("../images/Image9.webp").default;
     const before5 = require("../images/before11.webp").default;
     const after5 = require("../images/after11.webp").default;
-    const before6 = require("../images/before7.webp").default;
-    const after6 = require("../images/after7.webp").default;
 
 
 
@@ -60,25 +56,17 @@ class Gallery extends Component {
 
         <div className="container mb-5 padding-gallery">
           <div className="row">
-            <div className="col-lg-4 mb-5 mb-lg-0">
-              <ReactCompareImage alt="before/after pics" leftImage={before1} rightImage={after1} />
+            <div className="col-lg-6 mb-5 mb-lg-3">
+              <ReactCompareImage alt="before/after pics" leftImage={before1} rightImage={after1} aspectRatio="taller"/>
             </div>
-            <div className="col-lg-4 mb-5 mb-lg-0">
+            <div className="col-lg-6 mb-5 mb-lg-3">
               <ReactCompareImage alt="before/after pics" leftImage={before2} rightImage={after2} />
             </div>
-            <div className="col-lg-4 mb-5 mb-lg-0">
-              <ReactCompareImage alt="before/after pics" leftImage={before3} rightImage={after3} />
-            </div>
-          </div>
-          <div className="row mt-2">
-            <div className="col-lg-4 mb-5 mb-lg-0">
+            <div className="col-lg-6 mb-5 mb-lg-0">
               <ReactCompareImage alt="before/after pics" leftImage={before4} rightImage={after4} />
             </div>
-            <div className="col-lg-4 mb-5 mb-lg-0">
+            <div className="col-lg-6 mb-5 mb-lg-0">
               <ReactCompareImage alt="before/after pics" leftImage={before5} rightImage={after5} />
-            </div>
-            <div className="col-lg-4 mb-5 mb-lg-0">
-              <ReactCompareImage alt="before/after pics" leftImage={before6} rightImage={after6} />
             </div>
           </div>
         </div>

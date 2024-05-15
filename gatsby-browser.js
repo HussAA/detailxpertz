@@ -9,7 +9,7 @@ import "./src/styles/gallery.css"
 import './src/styles/ReusableComponents.css'
 import React from "react"
 import Providers from "./src/providers"
-
+import "react-image-gallery/styles/css/image-gallery.css"
 export const wrapRootElement = ({ element }) => {
   return <Providers>{element}</Providers>
 }

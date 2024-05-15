@@ -1,7 +1,13 @@
 @media (max-width:991.1px) {
     .padding-gallery{
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+@media (min-width:992px) {
+    .padding-gallery{
+        padding-left: 130px;
+        padding-right: 130px;
     }
 }
 @media (max-width:767.1px) {

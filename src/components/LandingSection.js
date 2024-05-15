@@ -77,17 +77,18 @@ const Masthead = styled.div`
     height: 35vh;
   }
 `;
+
 const LandingSection = () => {
   const [showDiscountAlert, setShowDiscountAlert] = React.useState(true);
   return (
     <>
-      <div className="">
+      <div>
         {showDiscountAlert && ( // Display the discount alert if showDiscountAlert is true
           <Alert
             severity="info"
             onClose={() => setShowDiscountAlert(false)} // Close the alert when dismissed
           >
-            First-time customers get 20% off!
+            First-time customers get 20% off! + Multiple vehicles discount
           </Alert>
         )}
       </div>
