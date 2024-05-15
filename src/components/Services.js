@@ -59,7 +59,7 @@ const Services = () => {
             </div>
             <Title className="mb-3 pb-2">Mobile Service</Title>
             <div className="">
-              We exclusively offer Mobile Service for with only the purchase of
+              We exclusively offer Mobile Service for with only the purchase with
               an interior package.
             </div>
           </div>

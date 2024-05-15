@@ -34,7 +34,7 @@ const SectionDescription = styled.div`
 `;
 const PricingColumn = styled.div`
   background: white;
-  height: 550px;
+  height: 580px;
   margin-top: 30px;
   border-radius: 1rem;
 
@@ -44,7 +44,7 @@ const PricingColumn = styled.div`
 `;
 const PricingColumnCenter = styled.div`
   background: #16192c;
-  height: 610px;
+  height: 640px;
   border-radius: 1rem;
 `;
 const PricingCard = styled.div`
@@ -145,7 +145,7 @@ const PricingButton = styled.button`
 `;
 const PricingButtonCenter = styled.button`
   width: 80%;
-  height: 46px;
+  height: 44px;
   border-radius: 7px;
   background: #5e6aba;
   color: black;
@@ -203,7 +203,7 @@ const Pricing = () => {
           <PricingColumn className="col-lg-4">
             <PricingCard>
               <div className="row">
-                <PricingTitles className="col">Basic</PricingTitles>
+                <PricingTitles className="col">Starter</PricingTitles>
               </div>
               <div className="row">
                 <PricingCost className="col">
@@ -247,6 +247,7 @@ const Pricing = () => {
                   <br />
                   <br />
                   <br />
+                  <br />
                 </PricingFeatures>
               </div>
               <div className="text-center mt-2">
@@ -269,7 +270,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingTitlesCenter className="col">
-                  Affordable
+                  Pro
                 </PricingTitlesCenter>
               </div>
               <div className="row">
@@ -298,6 +299,12 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
+                  1 Set floor mats
+                </PricingFeaturesCenter>
+              </div>
+              <div className="row">
+                <PricingFeaturesCenter className="col">
+                  <Check src={Checkmark} />
                   Steam vents, pillars, sun visor, pedals & steering wheel
                 </PricingFeaturesCenter>
               </div>
@@ -311,8 +318,6 @@ const Pricing = () => {
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
                   Clean leather
-                  <br />
-                  <br />
                 </PricingFeaturesCenter>
               </div>
               <div className="text-center">
@@ -352,7 +357,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} />1 Set floor mats
+                  <Check src={Checkmark} />2 Sets floor mats
                 </PricingFeatures>
               </div>
               <div className="row">
@@ -364,13 +369,13 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Leather Protection
+                  Leather Protection & Plastic Restoration
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Plastic Restoration
+                  Shampoo Seats
                 </PricingFeatures>
               </div>
               <div className="row">
