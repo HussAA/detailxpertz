@@ -85,7 +85,7 @@ const AddonList = ({ texts, price }) => {
     </>
   );
 };
-const AddOn = () => {
+const ExtAddOn = () => {
   return (
     <>
       <PackageTitle className="text-center">Extras (Excluded from discount)</PackageTitle>
@@ -93,19 +93,10 @@ const AddOn = () => {
       <div className="container">
         <div className="row">
           <AddonListP texts={["Semi Truck Detail"]} price={["$200.00 - $250.00"]}/>
-          <AddonListP texts={["Stain Removal Bottle"]} price={["$15.00"]}/>
           <AddonListP texts={["Motorcycle Detail"]} price={["$150.00"]}/>
           <AddonListP texts={["Semi Truck Detail"]} price={["$200.00 - $250.00"]}/>
           <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>
-          <AddonList texts={["Each additional floor mat"]} price={["$5.00"]}/>
-          <AddonList texts={["Headliner spot treatment"]} price={["$25.00 - $50.00"]}/>
-          <AddonList texts={["Pet Hair"]} price={["$40.00 - $80.00"]}/>
-          <AddonList texts={["Smoke damage"]} price={["$100.00 - $250.00"]}/>
-          <AddonList texts={["Mold damage/Urine/Heave"]} price={["$50.00 - $100.00"]}/>
-          <AddonList texts={["Excess Dirt/Gravel/Sand/Wood chips"]} price={["$80.00 - $250.00"]}/>
-          <AddonList texts={["Car seat"]} price={["$30.00"]}/>
-          <AddonList texts={["Storage compartments"]} price={["$25.00"]}/>
-          <AddonList texts={["Minor scratch removal"]} price={["$25.00"]}/>
+          <AddonList texts={["Minor scratch removal"]} price={["$10.00 /each"]}/>
           <AddonList texts={["Headlight Restoration"]} price={["$30.00"]}/>
           <AddonList texts={["Engine Cleaning"]} price={["$40.00"]}/>
         </div>
@@ -114,4 +105,4 @@ const AddOn = () => {
   );
 };
 
-export default AddOn;
+export default ExtAddOn;

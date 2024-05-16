@@ -15,6 +15,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
 import { StaticImage } from "gatsby-plugin-image";
+import Marquee from "react-fast-marquee";
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -24,7 +25,7 @@ const ListItemButtonStyle = styled(ListItemButton)`
 `;
 
 const AppBarStyle = styled(AppBar)`
-  height: 100px;
+  height: 130px;
   background: black;
   position: fixed;
 `;
@@ -47,7 +48,9 @@ const BookButtonStyle = styled(Button)`
     background: #3e699e;
   }
 `;
-
+const Line = styled.span`
+  margin-inline-end: 70px;
+`
 const drawerWidth = 240;
 
 const AppNavBar = (props) => {
@@ -102,6 +105,7 @@ const AppNavBar = (props) => {
     window !== undefined ? () => window().document.body : undefined;
     
   return (
+    <>
     <Box sx={{ display: "flex" }}>
       
       <AppBarStyle>
@@ -159,6 +163,11 @@ const AppNavBar = (props) => {
             </BookButtonStyle>
           </Box>
         </Toolbar>
+        <Marquee className="overflow-hidden">
+          <div className="p-1">
+            First-time customers get 20% off! <Line/> Multiple vehicles discount <Line/> +1 (587) 578-1512 <Line/>
+          </div>
+      </Marquee>
       </AppBarStyle>
       <nav>
         <Drawer
@@ -178,9 +187,16 @@ const AppNavBar = (props) => {
           }}
         >
           {drawer}
+          
         </Drawer>
+        
       </nav>
+      
+    
     </Box>
+    
+    </>
+
   );
 };
 

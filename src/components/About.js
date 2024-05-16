@@ -67,10 +67,10 @@ const AboutUs = () => {
       <SectionTitles className="text-center text-uppercase">
         Welcome
       </SectionTitles>
-      <SectionHeading>WHO WE ARE</SectionHeading>
+      <SectionHeading>For an Automotive Detailing Company</SectionHeading>
       <SectionDescription>
-        Whether it's a daily driver or a luxury vehicle, we are
-        committed to elevating your car's appearance and preserving its value.
+        Whether it's a daily driver or a luxury vehicle, we are committed to
+        elevating your car's appearance and preserving its value.
       </SectionDescription>
       <div className="container-lg px-5">
         <div className="row">
@@ -83,9 +83,11 @@ const AboutUs = () => {
 
             <LeftText className="row">
               <div className="col">
-                We are dedicated to enhancing the beauty and longevity of your
-                car through our comprehensive detailing services, using only the
-                finest products and techniques.
+                At Detailxpertz, we are passionate about restoring the beauty of
+                every vehicle we touch. With years of experience and a
+                commitment to excellence, we thrive by meticulously transforming
+                cars into works of art. Discover the difference with
+                Detailxpertz – where every detail matters.
               </div>
             </LeftText>
           </LeftHalf>

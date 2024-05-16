@@ -11,6 +11,8 @@ import AddOn from "../components/AddOn";
 import { Helmet } from "react-helmet";
 import Services from "../components/Services";
 import AllGallery from "../components/allGallery";
+import ExtAddOn from "../components/ExteriorAddOn";
+import ExteriorPackage from "../components/ExteriorPackage";
 const PricingSection = styled.section`
   background: #1e3f68;
   padding-top: 20px;
@@ -23,7 +25,18 @@ const PricingSection = styled.section`
   }
 
 `;
+const ExteriorPackageSection = styled.section`
+  background: #272727;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @media (max-width:991px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
+`;
 const IndexPage = () => {
   return (
     <>
@@ -49,6 +62,12 @@ const IndexPage = () => {
             <AddOn/>
           </div>
         </PricingSection>
+        <ExteriorPackageSection style={{ paddingTop: "120px" }}>
+          <ExteriorPackage />
+          <div>
+            <ExtAddOn/>
+          </div>
+        </ExteriorPackageSection>
         <section
           id="Services"
           style={{

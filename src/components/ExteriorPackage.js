@@ -186,18 +186,18 @@ const ListStyle2 = styled.div`
   margin-bottom: 10px;
   color: #5e6aba;
 `;
-const Pricing = () => {
+const ExteriorPackage = () => {
   const { tawkMessenger } = React.useContext(TawkContext);
   return (
     <>
       <PackageTitle id="Packages" className="text-center text-uppercase">
         packages
       </PackageTitle>
-      <SectionHeading>OUR INTERIOR PACKAGES</SectionHeading>
+      <SectionHeading>OUR EXTERIOR PACKAGES</SectionHeading>
       <SectionDescription>
-        Our interior package provides comprehensive car detailing, ensuring a
-        pristine and refreshed cabin with deep cleaning, upholstery treatment,
-        and meticulous attention to every detail.
+        Transform your vehicle with our Exterior Package, including a thorough
+        hand wash, wax application, and tire shine for a pristine and protected
+        finish.
       </SectionDescription>
       <div className="container-xl pricing-md-max">
         <div className="row">
@@ -208,7 +208,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $119.99 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $80 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
@@ -220,38 +220,25 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Full vehicle vaccum
+                  Exterior wash
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col ">
                   <Check src={Checkmark} />
-                  Clean/disinfect seats
-                </PricingFeatures>
-              </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  Steam dash, cup holder, & console
-                </PricingFeatures>
-              </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  Clean doors & windows
-                </PricingFeatures>
-              </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  NEW CAR SMELL!!!
+                  Tire shine
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <br />
                   <br />
                   <br />
                   <br />
                 </PricingFeatures>
               </div>
-              <div className="text-center mt-2">
+              <div className="text-center">
                 <PricingButton
                   onClick={() => {
                     tawkMessenger.toggle();
@@ -271,12 +258,12 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCostCenter className="col">
-                  $149.99 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $150 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCostCenter>
               </div>
               <div className="row">
                 <PricingCoverageCenter className="col">
-                  Ideal for a thorough interior detailing experience.
+                  Ideal for a thorough exterior detailing experience.
                 </PricingCoverageCenter>
               </div>
               <PricingHr />
@@ -289,7 +276,7 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Steam Seats + Shampoo floor
+                  Premium Wax
                 </PricingFeaturesCenter>
               </div>
               <div className="row">
@@ -300,19 +287,13 @@ const Pricing = () => {
               <div className="row">
                 <PricingFeaturesCenter className="col">
                   <Check src={Checkmark} />
-                  Steam vents, pillars, sun visor, pedals & steering wheel
-                </PricingFeaturesCenter>
-              </div>
-              <div className="row">
-                <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
-                  Vacuum trunk
-                </PricingFeaturesCenter>
-              </div>
-              <div className="row">
-                <PricingFeaturesCenter className="col">
-                  <Check src={Checkmark} />
-                  Clean leather
+                  Clean Rims
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </PricingFeaturesCenter>
               </div>
               <div className="text-center">
@@ -336,7 +317,7 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingCost className="col">
-                  $199.99 <PricingCostSpan>/Starting</PricingCostSpan>
+                  $200 <PricingCostSpan>/Starting</PricingCostSpan>
                 </PricingCost>
               </div>
               <div className="row">
@@ -353,31 +334,30 @@ const Pricing = () => {
               </div>
               <div className="row">
                 <PricingFeatures className="col">
-                  <Check src={Checkmark} />2 Sets of removable floor mats
+                  <Check src={Checkmark} />
+                  Polish
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Steam/protect console area
+                  polish rims
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Leather Protection & Plastic Restoration
+                  Exterior plastic restoration
                 </PricingFeatures>
               </div>
               <div className="row">
                 <PricingFeatures className="col">
                   <Check src={Checkmark} />
-                  Shampoo Seats
-                </PricingFeatures>
-              </div>
-              <div className="row">
-                <PricingFeatures className="col">
-                  <Check src={Checkmark} />
-                  Steam door sills, grab bars & ceiling light
+                  Iron removal
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                 </PricingFeatures>
               </div>
 
@@ -399,4 +379,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default ExteriorPackage;
