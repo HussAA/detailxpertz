@@ -19,7 +19,7 @@ const Items = styled.div`
   text-transform: capitalize;
 `;
 const Logo = styled.i`
-  margin-right: 10px;
+  margin-right: 7px;
   color: yellow;
 `;
 
@@ -35,17 +35,17 @@ const AddonListP = ({ texts, price }) => {
           {texts.map((v, i) => {
             return (
               <React.Fragment key={i}>
-                <div className="col-6">
+                <div className="col-8">
                   <Items className="col-12">
                     <Logo className="bi bi-bag-plus" />
                     {v}
                   </Items>
                 </div>
-                <div className="col-6">
+                <div className="col-4">
                   <div>
                     
                     <Logo className="bi bi-arrow-right"/>
-                    <Price className="ms-3">{price}</Price>
+                    <Price className="">{price}</Price>
                   </div>
                 </div>
               </React.Fragment>
@@ -64,17 +64,17 @@ const AddonList = ({ texts, price }) => {
           {texts.map((v, i) => {
             return (
               <React.Fragment key={i}>
-                <div className="col-6">
+                <div className="col-8">
                   <Items className="col-12">
                     <Logo className="bi bi-bookmark-check" />
                     {v}
                   </Items>
                 </div>
-                <div className="col-6">
+                <div className="col-4">
                   <div>
                     
                     <Logo className="bi bi-arrow-right"/>
-                    <Price className="ms-3">{price}</Price>
+                    <Price className="">{price}</Price>
                   </div>
                 </div>
               </React.Fragment>
@@ -90,14 +90,14 @@ const ExtAddOn = () => {
     <>
       <PackageTitle className="text-center">Extras (Excluded from discount)</PackageTitle>
 
-      <div className="container">
+      <div className="container noPadding">
         <div className="row">
-          <AddonListP texts={["Motorcycle Detail"]} price={["$150.00"]}/>
-          <AddonListP texts={["Semi Truck Detail"]} price={["$200.00 - $250.00"]}/>
-          <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>
-          <AddonList texts={["Minor scratch removal"]} price={["$10.00 /each"]}/>
-          <AddonList texts={["Headlight Restoration"]} price={["$30.00"]}/>
-          <AddonList texts={["Engine Cleaning"]} price={["$40.00"]}/>
+          <AddonListP texts={["Motorcycle Detail"]} price={["$150"]}/>
+          <AddonListP texts={["Semi Truck Detail"]} price={["$200 - $250"]}/>
+          <AddonList texts={["Exterior Plastic Restoration"]} price={["$30 - $50"]}/>
+          <AddonList texts={["Minor scratch removal"]} price={["$10 /each"]}/>
+          <AddonList texts={["Headlight Restoration"]} price={["$30"]}/>
+          <AddonList texts={["Engine Cleaning"]} price={["$40"]}/>
         </div>
       </div>
     </>

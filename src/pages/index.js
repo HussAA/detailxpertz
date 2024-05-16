@@ -23,6 +23,10 @@ const PricingSection = styled.section`
     padding-left: 30px;
     padding-right: 30px;
   }
+  @media (max-width:500px) {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 
 `;
 const ExteriorPackageSection = styled.section`
@@ -35,7 +39,10 @@ const ExteriorPackageSection = styled.section`
     padding-left: 30px;
     padding-right: 30px;
   }
-
+  @media (max-width:500px) {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 `;
 const IndexPage = () => {
   return (

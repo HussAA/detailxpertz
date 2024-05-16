@@ -71,4 +71,13 @@ html {
 
 
 
-
+@media (max-width:500px) {
+  .noPadding{
+    padding: 0px;
+  }
+}
+@media (min-width:501px) {
+  .noPadding{
+    padding: 50px;
+  }
+}

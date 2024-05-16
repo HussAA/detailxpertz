@@ -17,14 +17,17 @@ const Items = styled.div`
   color: white;
   font-size: 18px;
   text-transform: capitalize;
+  display: flex;
+  white-space: nowrap;
 `;
 const Logo = styled.i`
-  margin-right: 10px;
+  margin-right: 7px;
   color: yellow;
 `;
 
 const Price = styled.span`
   color: white;
+  white-space: nowrap;
 `;
 
 const AddonListP = ({ texts, price }) => {
@@ -35,17 +38,17 @@ const AddonListP = ({ texts, price }) => {
           {texts.map((v, i) => {
             return (
               <React.Fragment key={i}>
-                <div className="col-6">
+                <div className="col-8">
                   <Items className="col-12">
                     <Logo className="bi bi-bag-plus" />
                     {v}
                   </Items>
                 </div>
-                <div className="col-6">
+                <div className="col-4">
                   <div>
                     
                     <Logo className="bi bi-arrow-right"/>
-                    <Price className="ms-3">{price}</Price>
+                    <Price className="">{price}</Price>
                   </div>
                 </div>
               </React.Fragment>
@@ -64,17 +67,17 @@ const AddonList = ({ texts, price }) => {
           {texts.map((v, i) => {
             return (
               <React.Fragment key={i}>
-                <div className="col-6">
+                <div className="col-8">
                   <Items className="col-12">
                     <Logo className="bi bi-bookmark-check" />
                     {v}
                   </Items>
                 </div>
-                <div className="col-6">
+                <div className="col-4">
                   <div>
                     
                     <Logo className="bi bi-arrow-right"/>
-                    <Price className="ms-3">{price}</Price>
+                    <Price className="">{price}</Price>
                   </div>
                 </div>
               </React.Fragment>
@@ -90,23 +93,23 @@ const AddOn = () => {
     <>
       <PackageTitle className="text-center">Extras (Excluded from discount)</PackageTitle>
 
-      <div className="container">
+      <div className="container noPadding">
         <div className="row">
-          <AddonListP texts={["Stain Removal Bottle"]} price={["$15.00"]}/>
-          <AddonListP texts={["Motorcycle Detail"]} price={["$150.00"]}/>
-          <AddonListP texts={["Semi Truck Detail"]} price={["$200.00 - $250.00"]}/>
-          <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>
-          <AddonList texts={["Each additional floor mat"]} price={["$5.00"]}/>
-          <AddonList texts={["Headliner spot treatment"]} price={["$25.00 - $50.00"]}/>
-          <AddonList texts={["Pet Hair"]} price={["$40.00 - $80.00"]}/>
-          <AddonList texts={["Smoke damage"]} price={["$100.00 - $250.00"]}/>
-          <AddonList texts={["Mold damage/Urine/Heave"]} price={["$50.00 - $100.00"]}/>
-          <AddonList texts={["Excess Dirt/Gravel/Sand/Wood chips"]} price={["$80.00 - $250.00"]}/>
-          <AddonList texts={["Car seat"]} price={["$30.00"]}/>
-          <AddonList texts={["Storage compartments"]} price={["$25.00"]}/>
-          <AddonList texts={["Minor scratch removal"]} price={["$25.00"]}/>
-          <AddonList texts={["Headlight Restoration"]} price={["$30.00"]}/>
-          <AddonList texts={["Engine Cleaning"]} price={["$40.00"]}/>
+          <AddonListP texts={["Stain Removal Bottle"]} price={["$15"]}/>
+          <AddonListP texts={["Motorcycle Detail"]} price={["$150"]}/>
+          <AddonListP texts={["Semi Truck Detail"]} price={["$200 - $250"]}/>
+          <AddonList texts={["Exterior Plastic Restoration"]} price={["$30 - $50"]}/>
+          <AddonList texts={["floor mat"]} price={["$5/each"]}/>
+          <AddonList texts={["Headliner spot treatment"]} price={["$25 - $50"]}/>
+          <AddonList texts={["Pet Hair"]} price={["$40 - $80"]}/>
+          <AddonList texts={["Smoke damage"]} price={["$100 - $250"]}/>
+          <AddonList texts={["Mold damage/Urine"]} price={["$50 - $100"]}/>
+          <AddonList texts={["Excess Dirt"]} price={["$80 - $250"]}/>
+          <AddonList texts={["Car seat"]} price={["$30"]}/>
+          <AddonList texts={["Storage compartments"]} price={["$25"]}/>
+          <AddonList texts={["Minor scratch removal"]} price={["$25"]}/>
+          <AddonList texts={["Headlight Restoration"]} price={["$30"]}/>
+          <AddonList texts={["Engine Cleaning"]} price={["$40"]}/>
         </div>
       </div>
     </>
