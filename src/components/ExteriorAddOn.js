@@ -92,7 +92,6 @@ const ExtAddOn = () => {
 
       <div className="container">
         <div className="row">
-          <AddonListP texts={["Semi Truck Detail"]} price={["$200.00 - $250.00"]}/>
           <AddonListP texts={["Motorcycle Detail"]} price={["$150.00"]}/>
           <AddonListP texts={["Semi Truck Detail"]} price={["$200.00 - $250.00"]}/>
           <AddonList texts={["Exterior Plastic Restoration"]} price={["$30.00 - $50.00"]}/>
