@@ -16,13 +16,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
 import { StaticImage } from "gatsby-plugin-image";
 import Marquee from "react-fast-marquee";
-import { map } from "lodash";
-
-const headlines = [
-  "First-time customers get 20% off! ",
-  "Multiple vehicles discount",
-  "+1 (587) 578-1512",
-];
 
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
