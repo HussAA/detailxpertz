@@ -57,8 +57,12 @@ const SectionDescription = styled.div`
   text-align: center;
   color: #6e6e6e;
   margin-bottom: 70px;
-  margin-left: 23px;
-  margin-right: 23px;
+  padding-left: 20%;
+  padding-right: 20%;
+  @media screen and (max-width: 800px) {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
 `;
 
 const AboutUs = () => {

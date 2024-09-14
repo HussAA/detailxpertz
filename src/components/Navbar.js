@@ -16,6 +16,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { TawkContext } from "../providers";
 import { StaticImage } from "gatsby-plugin-image";
 import Marquee from "react-fast-marquee";
+import { map } from "lodash";
+
+const headlines = [
+  "First-time customers get 20% off! ",
+  "Multiple vehicles discount",
+  "+1 (587) 578-1512",
+];
+
 const ListItemButtonStyle = styled(ListItemButton)`
   text-transform: capitalize;
   transition: 0.2s;
@@ -48,9 +56,7 @@ const BookButtonStyle = styled(Button)`
     background: #3e699e;
   }
 `;
-const Line = styled.span`
-  margin-inline-end: 70px;
-`
+
 const drawerWidth = 240;
 
 const AppNavBar = (props) => {
@@ -103,100 +109,99 @@ const AppNavBar = (props) => {
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
-    
+
   return (
     <>
-    <Box sx={{ display: "flex" }}>
-      
-      <AppBarStyle>
-        <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
-        
-          <IconButton
-            color="primary"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { md: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div">
-            <div href="/" style={{ color: "black", textDecoration: "none" }}>
-              {/* Detail<i class="bi bi-twitter-x"></i>PERTZ */}
+      <Box sx={{ display: "flex" }}>
+        <AppBarStyle>
+          <Toolbar sx={{ marginTop: "auto", marginBottom: "auto" }}>
+            <IconButton
+              color="primary"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { md: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" component="div">
+              <div href="/" style={{ color: "black", textDecoration: "none" }}>
+                {/* Detail<i class="bi bi-twitter-x"></i>PERTZ */}
+              </div>
+            </Typography>
+            <StaticImage
+              src="../images/nav_logo.jpg"
+              width={120}
+              height={100}
+              alt="car logo"
+            />
+            <Box
+              sx={{ mr: 2, display: { xs: "none", md: "block" } }}
+              style={{ marginLeft: "auto" }}
+            >
+              <LinksStyle href="#About">About</LinksStyle>
+              <LinksStyle href="#Services">Services</LinksStyle>
+              <LinksStyle href="#Packages">Packages</LinksStyle>
+              <LinksStyle href="https://g.page/r/CYvr5T3sH-clEAI/review">Write a Review</LinksStyle>
+              <LinksStyle href="#Gallery">Gallery</LinksStyle>
+              <BookButtonStyle
+                onClick={() => {
+                  tawkMessenger.toggle();
+                }}
+                variant="contained"
+              >
+                Book Now
+              </BookButtonStyle>
+            </Box>
+            <Box
+              sx={{ mr: 2, display: { md: "none" } }}
+              style={{ marginLeft: "auto" }}
+            >
+              <BookButtonStyle
+                onClick={() => {
+                  tawkMessenger.toggle();
+                }}
+                variant="contained"
+              >
+                Book Now
+              </BookButtonStyle>
+            </Box>
+          </Toolbar>
+          <Marquee className="overflow-hidden">
+            <div className="flex">
+              <span className="p-5">First-time customers get 20% off!</span>
+              <span className="p-5">Multiple vehicles discount</span>
+              <span className="p-5">+1 (587) 578-1512</span>
+              <span className="p-5">First-time customers get 20% off!</span>
+              <span className="p-5">Multiple vehicles discount</span>
+              <span className="p-5">+1 (587) 578-1512</span>
+              <span className="p-5">Multiple vehicles discount</span>
+              <span className="p-5">First-time customers get 20% off!</span>
             </div>
-          </Typography>
-          <StaticImage
-            src="../images/nav_logo.jpg"
-            width={120}
-            height={100}
-            alt="car logo"
-          />
-          <Box
-            sx={{ mr: 2, display: { xs: "none", md: "block" } }}
-            style={{ marginLeft: "auto" }}
+          </Marquee>
+        </AppBarStyle>
+        <nav>
+          <Drawer
+            container={container}
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: "block", md: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
+            }}
           >
-            <LinksStyle href="#About">About</LinksStyle>
-            <LinksStyle href="#Services">Services</LinksStyle>
-            <LinksStyle href="#Packages">Packages</LinksStyle>
-            <LinksStyle href="tel:+15875781512">Call us</LinksStyle>
-            <LinksStyle href="#Gallery">Gallery</LinksStyle>
-            <BookButtonStyle
-              onClick={() => {
-                tawkMessenger.toggle();
-              }}
-              variant="contained"
-            >
-              Book Now
-            </BookButtonStyle>
-          </Box>
-          <Box
-            sx={{ mr: 2, display: { md: "none" } }}
-            style={{ marginLeft: "auto" }}
-          >
-            <BookButtonStyle
-              onClick={() => {
-                tawkMessenger.toggle();
-              }}
-              variant="contained"
-            >
-              Book Now
-            </BookButtonStyle>
-          </Box>
-        </Toolbar>
-        <Marquee className="overflow-hidden">
-          <div className="p-1">
-            First-time customers get 20% off! <Line/> Multiple vehicles discount <Line/> +1 (587) 578-1512 <Line/>
-          </div>
-      </Marquee>
-      </AppBarStyle>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", md: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-          
-        </Drawer>
-        
-      </nav>
-      
-    
-    </Box>
-    
+            {drawer}
+          </Drawer>
+        </nav>
+      </Box>
     </>
-
   );
 };
 

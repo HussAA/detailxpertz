@@ -19,6 +19,7 @@ const PricingSection = styled.section`
   padding-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  overflow-x: hidden;
   @media (max-width:991px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -27,7 +28,6 @@ const PricingSection = styled.section`
     padding-left: 1px;
     padding-right: 1px;
   }
-
 `;
 const ExteriorPackageSection = styled.section`
   background: #272727;
@@ -35,6 +35,7 @@ const ExteriorPackageSection = styled.section`
   padding-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  overflow-x: hidden;
   @media (max-width:991px) {
     padding-left: 30px;
     padding-right: 30px;
